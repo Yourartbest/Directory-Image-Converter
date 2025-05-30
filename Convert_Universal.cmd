@@ -10,7 +10,7 @@ Set /p inputType= Enter input image type (ie: jpg):
 
 Set /p outputType= Enter output image type (ie: png):
 
-Rem changes all webp files into png because webp sucks
+Rem changes all webp files into outputType because inputType sucks
 magick mogrify -format %outputType% *.%inputType%
 
 Rem deletes webp since we have a better format version of the images
